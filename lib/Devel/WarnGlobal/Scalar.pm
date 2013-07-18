@@ -1,6 +1,6 @@
 package Devel::WarnGlobal::Scalar;
 {
-  $Devel::WarnGlobal::Scalar::VERSION = '0.06';
+  $Devel::WarnGlobal::Scalar::VERSION = '0.07';
 }
 
 use strict;
@@ -114,11 +114,18 @@ sub die_on_write {
 }
 
 1;
+
 __END__
+
+=pod
 
 =head1 NAME
 
-Devel::WarnGlobal::Scalar - Perl extension aiding elimination of globals
+Devel::WarnGlobal::Scalar
+
+=head1 VERSION
+
+version 0.07
 
 =head1 SYNOPSIS
 
@@ -158,6 +165,10 @@ Devel::WarnGlobal::Scalar will die if an attempt is made to write to a
 value with no 'set' method defined. (Otherwise, the 'set' method will
 produce a warning, but will have no effect on the value.)
 
+=head1 NAME
+
+Devel::WarnGlobal::Scalar - Perl extension aiding elimination of globals
+
 =head1 AUTHOR
 
 Stephen Nelson, stephenenelson@mac.com
@@ -166,6 +177,15 @@ Stephen Nelson, stephenenelson@mac.com
 
 perl(1), perltie(1), Tie::Watch(3), Devel::WarnGlobal(3).
 
+=head1 AUTHOR
+
+Stephen Nelson <stephenenelson@mac.com>
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2013 by Stephen Nelson.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
+
 =cut
-
-

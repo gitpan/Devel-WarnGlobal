@@ -1,6 +1,6 @@
 package Devel::WarnGlobal;
 {
-  $Devel::WarnGlobal::VERSION = '0.06';
+  $Devel::WarnGlobal::VERSION = '0.07';
 }
 
 use strict;
@@ -72,9 +72,15 @@ sub _fix_name {
 
 __END__
 
+=pod
+
 =head1 NAME
 
-Devel::WarnGlobal - Perl extension to aid in eliminating globals
+Devel::WarnGlobal
+
+=head1 VERSION
+
+version 0.07
 
 =head1 SYNOPSIS
 
@@ -171,6 +177,9 @@ As a convenience, you can tie variables in the 'use' line with
 Devel::WarnGlobal. Or, you can use the underlying
 Devel::WarnGlobal::Scalar module directly.
 
+=head1 NAME
+
+Devel::WarnGlobal - Perl extension to aid in eliminating globals
 
 =head1 TODO
 
@@ -178,14 +187,19 @@ Support for tying arrays, hashes, and filehandles
 
 Variable-shadowing checks, so that we can monitor whether the tied variable and the subroutine stay in sync
 
+=head1 SEE ALSO
+
+L<Variable::Magic>
 
 =head1 AUTHOR
 
-Stephen Nelson, stephenenelson@mac.com
+Stephen Nelson <stephenenelson@mac.com>
 
-=head1 SEE ALSO
+=head1 COPYRIGHT AND LICENSE
 
-perl(1), perltie(1), Tie::Watch(3).
+This software is copyright (c) 2013 by Stephen Nelson.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
 
 =cut
-
