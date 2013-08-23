@@ -1,10 +1,9 @@
 package Devel::WarnGlobal::Scalar;
-{
-  $Devel::WarnGlobal::Scalar::VERSION = '0.07';
-}
 
 use strict;
 use warnings;
+
+our $VERSION = '0.08'; # VERSION
 
 use Carp;
 
@@ -125,7 +124,7 @@ Devel::WarnGlobal::Scalar
 
 =head1 VERSION
 
-version 0.07
+version 0.08
 
 =head1 SYNOPSIS
 

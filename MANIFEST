@@ -7,4 +7,4 @@ README
 dist.ini
 lib/Devel/WarnGlobal.pm
 lib/Devel/WarnGlobal/Scalar.pm
-test.pl
+t/1.t

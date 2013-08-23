@@ -22,13 +22,15 @@ my %WriteMakefileArgs = (
   "PREREQ_PM" => {
     "Carp" => 0,
     "strict" => 0,
-    "vars" => 0,
     "warnings" => 0
   },
-  "TEST_REQUIRES" => {},
-  "VERSION" => "0.07",
+  "TEST_REQUIRES" => {
+    "Test" => 0,
+    "vars" => 0
+  },
+  "VERSION" => "0.08",
   "test" => {
-    "TESTS" => ""
+    "TESTS" => "t/*.t"
   }
 );
 
