@@ -1,9 +1,11 @@
 package Devel::WarnGlobal::Scalar;
 
+# ABSTRACT: Track down and eliminate scalar globals
+
 use strict;
 use warnings;
 
-our $VERSION = '0.08'; # VERSION
+our $VERSION = '0.09'; # VERSION
 
 use Carp;
 
@@ -120,11 +122,11 @@ __END__
 
 =head1 NAME
 
-Devel::WarnGlobal::Scalar
+Devel::WarnGlobal::Scalar - Track down and eliminate scalar globals
 
 =head1 VERSION
 
-version 0.08
+version 0.09
 
 =head1 SYNOPSIS
 
@@ -166,7 +168,7 @@ produce a warning, but will have no effect on the value.)
 
 =head1 NAME
 
-Devel::WarnGlobal::Scalar - Perl extension aiding elimination of globals
+Devel::WarnGlobal::Scalar - Track down and eliminate scalar globals
 
 =head1 AUTHOR
 

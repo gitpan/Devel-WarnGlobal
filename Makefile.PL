@@ -2,14 +2,14 @@
 use strict;
 use warnings;
 
-
+use 5.006000;
 
 use ExtUtils::MakeMaker 6.30;
 
 
 
 my %WriteMakefileArgs = (
-  "ABSTRACT" => "Perl extension to aid in eliminating globals",
+  "ABSTRACT" => "Helps track down and eliminate globals",
   "AUTHOR" => "Stephen Nelson <stephenenelson\@mac.com>",
   "BUILD_REQUIRES" => {},
   "CONFIGURE_REQUIRES" => {
@@ -28,7 +28,7 @@ my %WriteMakefileArgs = (
     "Test" => 0,
     "vars" => 0
   },
-  "VERSION" => "0.08",
+  "VERSION" => "0.09",
   "test" => {
     "TESTS" => "t/*.t"
   }

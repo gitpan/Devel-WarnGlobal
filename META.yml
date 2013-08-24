@@ -1,5 +1,5 @@
 ---
-abstract: 'Perl extension to aid in eliminating globals'
+abstract: 'Helps track down and eliminate globals'
 author:
   - 'Stephen Nelson <stephenenelson@mac.com>'
 build_requires:
@@ -16,6 +16,10 @@ meta-spec:
 name: Devel-WarnGlobal
 requires:
   Carp: 0
+  perl: v5.6.0
   strict: 0
   warnings: 0
-version: 0.08
+resources:
+  homepage: https://github.com/stephenenelson/devel-warnglobal
+  repository: https://github.com/stephenenelson/devel-warnglobal.git
+version: 0.09
